@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #6592CF;
+        }
+        
+        .chevron{
+            height: 200px;
+            position: relative;
+        }
+        
+        .chevron::before,
+        .chevron::after {
+            position: absolute;
+            content: "";
+            border: 100px solid transparent;
+            
+        }
+        
+        .chevron::before{
+            top:0;
+            border-top-color: #293D7E;
+        }
+        
+        .chevron::after{
+            top:-40px;
+            border-top-color: #6592CF;
+        }
+        
+        .position {
+            top: -150px;
+            z-index: -1;
+        
+        }
+        .position2 {
+            top: -300px;
+            z-index: -2;
+        }
+      </style>
+</head>
+<body>
+    <div class="chevron"></div>
+    <div class="chevron position"></div>
+    <div class="chevron position2"></div>
+
+</body>
+</html>
